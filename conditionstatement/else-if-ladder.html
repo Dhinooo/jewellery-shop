@@ -7,88 +7,104 @@
   </head>
   <body>
     <script>
-    //   let age = prompt('Enter ur age')
-    //   //   debugger;
-    //   if (age >= 1 && age <= 12) {
-    //     console.log('You are child')
-    //   } else if (age >= 13 && age <= 19) {
-    //     console.log('You are teenager')
-    //   } else if (age >= 20 && age <= 55) {
-    //     console.log('You are people')
-    //   } else if (age >= 55) {
-    //     console.log('You are senior people')
-    //   } else if (age < 0) {
-    //     alert('Negative number not allowed')
-    //   } else if (age == 0){
-    //     alert('Not allowed 0 ')
-    //   }
+      //   let age = prompt('Enter ur age')
+      //   //   debugger;
+      //   if (age >= 1 && age <= 12) {
+      //     console.log('You are child')
+      //   } else if (age >= 13 && age <= 19) {
+      //     console.log('You are teenager')
+      //   } else if (age >= 20 && age <= 55) {
+      //     console.log('You are people')
+      //   } else if (age >= 55) {
+      //     console.log('You are senior people')
+      //   } else if (age < 0) {
+      //     alert('Negative number not allowed')
+      //   } else if (age == 0){
+      //     alert('Not allowed 0 ')
+      //   }
 
-        //   let score = prompt('Enter ur score?')
+      //   let score = prompt('Enter ur score?')
 
-        //   if (score == 25) {
-        //     console.log('Your score is bronse')
-        //   } else if (score == 50) {
-        //     console.log('Your score is silver')
-        //   } else if (score == 75) {
-        //     console.log('Your score is gold')
-        //   } else if (score == 100) {
-        //     console.log('Your score is platinum')
-        //   } else if (score == 0){
-        //     console.log("Not allowed 0");
-        //   } else if(score < 0){
-        //     console.log('Not allowed negative number');
-        //   } else{
-        //     console.log("Please enter valid Score")
-        //   }
+      //   if (score == 25) {
+      //     console.log('Your score is bronse')
+      //   } else if (score == 50) {
+      //     console.log('Your score is silver')
+      //   } else if (score == 75) {
+      //     console.log('Your score is gold')
+      //   } else if (score == 100) {
+      //     console.log('Your score is platinum')
+      //   } else if (score == 0){
+      //     console.log("Not allowed 0");
+      //   } else if(score < 0){
+      //     console.log('Not allowed negative number');
+      //   } else{
+      //     console.log("Please enter valid Score")
+      //   }
 
-        // let salary = prompt('Enter ur salary amt?')
-        // // debugger;
-        // if (salary >= 20000 && salary <= 45000) {
-        //   console.log('eligible for 80000')
-        // } else if (salary >= 46000 && salary <= 85000) {
-        //   console.log('eligible for 100000')
-        // } else if (salary >= 86000 && salary <= 100000) {
-        //   console.log('eligible for 500000')
-        // } else if (salary >= 100001 && salary <= 200000) {
-        //   console.log('eligible for one million')
-        // } else if (salary >= 200000) {
-        //   console.log('Your  Billinors so loan not approval')
-        // } else if (salary < 0) {
-        //     console.log('Negative number not allowed')
-        // } else if(salary == 0){
-        //     console.log('Not allowed 0')
-        // } else{
-        //     console.log('Please enter correct salary')
-        // }
+      // let salary = prompt('Enter ur salary amt?')
+      // // debugger;
+      // if (salary >= 20000 && salary <= 45000) {
+      //   console.log('eligible for 80000')
+      // } else if (salary >= 46000 && salary <= 85000) {
+      //   console.log('eligible for 100000')
+      // } else if (salary >= 86000 && salary <= 100000) {
+      //   console.log('eligible for 500000')
+      // } else if (salary >= 100001 && salary <= 200000) {
+      //   console.log('eligible for one million')
+      // } else if (salary >= 200000) {
+      //   console.log('Your  Billinors so loan not approval')
+      // } else if (salary < 0) {
+      //     console.log('Negative number not allowed')
+      // } else if(salary == 0){
+      //     console.log('Not allowed 0')
+      // } else{
+      //     console.log('Please enter correct salary')
+      // }
 
-      let o_uname = "admin";
-      let o_pass = "admin@123";
+      let o_uname = 'admin'
+      let o_pass = 'admin@123'
+      // debugger;
 
+      let username = prompt('Enter your username')
+      let password = prompt('Enter your password')
 
-      let username = prompt("Enter your username");
-      let password = prompt("Enter your password");
-
-      if(o_uname === username){
-          if(o_pass === password){
-              alert('Login succfully')
-          }else{
-              alert("Password is wrong")
-          }
-      }else{
-          alert("You enter wrong username")
+      if (o_uname === username) {
+        if (o_pass === password) {
+          alert('Login succfully')
+        } else {
+          alert('Password is wrong')
+        }
+      } else {
+        if (username === '') {
+          alert('Empty username is not allowed')
+        }
+        if (password === '') {
+          alert('Empty password is not allowed')
+        } else alert('You enter wrong username')
       }
 
-      let emt_uname = ' ';
-      let emt_pass = ' ';
+      // let o_uname = 'admin'
+      // let o_pass = 'admin@123'
 
+      // let username = prompt('enter username')
+      // let password = prompt('enter password')
+      // debugger
+      // if (o_uname === username) {
+      //   // admin === "dhina"
 
-      if(emt_uname === username){
-          if(emt_pass === password){
-              alert('empty value not allowed')
-          }
-      }else{
-          alert("empty value not allowed")
-      }
+      //   if (o_pass === password) {
+      //     alert('Login successfully')
+      //   } else {
+      //     alert('Password is wrong')
+      //   }
+      // } else {
+      //   if (username == '') {
+      //     alert('Empty username is not allowed')
+      //   } else {
+      //     alert('you enter wrong username')
+      //   }
+      // }
+
     </script>
   </body>
 </html>
