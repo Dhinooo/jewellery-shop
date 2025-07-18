@@ -7,31 +7,23 @@
   </head>
   <body>
     <script>
-      let a = 9
-      let b = 8
-      let c = 7
+      let a = 8
+      let b = 7
+      let c = 9
 
       //    debugger;
       if (a > b) {
-        console.log('a is greater then b')
-
-        if (a > c) {
-          console.log('a is greater then c')
-        } else {
-          console.log('c is greater then a')
-        }
-        if (b > c) {
-          console.log('b is greater then c')
-        } else {
-          console.log('c is greater then b')
-        }
+        console.log('a is biggest number')
+      } else if (a > c) {
+        console.log(' b is biggest number')
+      } else if (b > c) {
+        console.log('b is biggest number')
+      } else if (c > a) {
+        console.log('c is biggest number')
+      } else if (c > b) {
+        console.log('c is biggest numer')
       } else {
-        console.log('b is greater then a')
-      }
-      if (b < c) {
-        console.log('c is greater then b')
-      } else {
-        console.log('b is greater then c')
+        console.log('b is biggest numer')
       }
 
       //   let a = 7
