@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star-pattern</title>
+  </head>
+  <body>
+    <script>
+      // debugger;
+      //   for (let i = 2; i <= 6; i++) {
+      //     let c = i%2;
+      //     document.writeln(c,'<br>')
+      //   }
+      //   ============================================================================
+      //   let rows = prompt('Enter the number?')
+
+      //   for (let i = 1; i <= rows; i++) {
+      //     let a = i % 2 ? 0 : 1
+      //     document.writeln(a, '<br>')
+      //   }
+      // ==============================================================================================.
+
+      // for (let i= 5; i>=1; i++){
+      //     for(let j=1; j>=5; j++){
+      //         document.writeln("*")
+      //     }
+      //     document.writeln("<br>")
+      // }
+      // =================================================================/
+
+      // for (let i = 5; i >= 1; i--) {
+      //   for (let j = i; j >= 1; j--) {
+      //     document.writeln(j)
+      //   }
+      //   document.writeln('<br>')
+      // }
+
+      // for (let i = 7; i >= 1; i--) {
+      //   for (let j = i; j >= 1; j--) {
+      //     document.writeln(j)
+      //   }
+      //   document.writeln('<br>')
+      // }
+
+      // for (let i = 5; i >= 1; i--) {
+      //   for (let j = 5; j >= i; j--) {
+      //     document.writeln(j)
+      //   }
+      //   document.writeln('<br>')
+      // }
+
+      // // let temp = 0
+      // for (let i = 5; i >= 1; i--) { //row
+      //   // temp = temp + 1
+      //   for (let j = 1; j <= i; j++) { // column
+      //     document.writeln(i)
+      //   }
+      //   document.writeln('<br>')
+      // }
+
+      for (let i = 5; i >= 1; i--) {
+        for (let j = 1; j <= i; j++) {
+          document.writeln("&nbsp;&nbsp;")
+        }
+        for (let k = i; k <= 5; k++) {
+          document.writeln("* ")
+        }
+        document.writeln("<br>")
+      }
+    </script>
+  </body>
+</html>
