@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch-task</title>
+  </head>
+  <body>
+    <script>
+      function formula1(x, y) {
+        return x * x + y * y + 2 * x * y
+      }
+      function Starpattern() {
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.writeln('*')
+          }
+          document.writeln('<br>')
+        }
+      }
+      function formula2(l, b, h) {
+        return l * b * h
+      }
+      function formula3(x, y) {
+        return x + y * x - y
+      }
+
+      let ex = prompt(
+        'Enter your case? \n 1.x**2 + y**2 + 2xy \n 2.star pattern \n 3.l*b*h \n 4.(x+y)(x-y)'
+      )
+
+      switch (ex) {
+        case '1':
+          let x = prompt('Enter x value?')
+          let y = prompt('Enter y value?')
+          let ans = formula1(x, y)
+          document.writeln(ans)
+          break
+        case '2':
+           Starpattern()
+          break
+        case '3':
+          let l = prompt('Enter l value?')
+          let b = prompt('Enter b value?')
+          let h = prompt('Enter h value?')
+          let ans3 = formula2(l, b, h)
+          document.writeln(ans3)
+          break
+        case '4':
+          let x1 = prompt('Enter x value?')
+          let y1 = prompt('Enter y  value?')
+          let ans4 = formula3(x1, y1)
+          document.writeln(ans4)
+          break
+        default:
+          document.writeln('Invalid Number')
+          break
+      }
+    </script>
+  </body>
+</html>
