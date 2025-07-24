@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <script>
+      function add(a, b) {
+        return a + b
+      }
+      function subs(a, b) {
+        return a - b
+      }
+      function multi(a, b) {
+        return a * b
+      }
+      function divi(a, b) {
+        return a / b
+      }
+      function madulo(a, b) {
+        return a % b
+      }
+
+      let ex = prompt(
+        'Enter your case? \n 1.addition \n 2.substration \n 3.multiplication \n 4.division \n 5.madulo'
+      )
+      let fun = prompt('Enter ur first number?')
+      let fun2 = prompt('Enter ur sec number?')
+
+      switch (ex) {
+        case '1':
+          let ans = add(Number(fun), Number(fun2))
+          console.log(ans)
+          break
+        case '2':
+          let ans1 = subs(fun, fun2)
+          console.log(ans1)
+          break
+        case '3':
+          let ans2 = multi(fun, fun2)
+          console.log(ans2)
+          break
+        case '4':
+          let ans3 = divi(fun, fun2)
+          console.log(ans3)
+          break
+        case '5':
+          let ans4 = madulo(fun, fun2)
+          console.log(ans4)
+          break
+        default:
+          console.log('Invalid case Number')
+          break
+      }
+    </script>
+  </body>
+</html>
