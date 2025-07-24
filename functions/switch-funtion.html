@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function-task</title>
+  </head>
+  <body>
+    <script>
+      function anglepattern() {
+        for (let i = 1; i <= 5; i++) {
+          for (let j = 1; j <= i; j++) {
+            document.writeln('*')
+          }
+          document.writeln('<br>')
+        }
+      }
+      function revangleshape() {
+        for (let i = 5; i >= 1; i--) {
+          for (let j = 1; j <= i; j++) {
+            document.writeln('*')
+          }
+          document.writeln('<br>')
+        }
+      }
+      function pyramidshape() {
+        for (let i = 5; i >= 1; i--) {
+          let temp = i * 2 - 1
+          console.log(temp)
+          for (let j = 1; j <= i; j++) {
+            document.writeln('&nbsp;&nbsp')
+          }
+          for (let k = temp; k <= 9; k++) {
+            document.writeln('* ')
+          }
+          document.writeln('<br>')
+        }
+      }
+      function revpyramidshape() {
+        for (let i = 1; i <= 5; i++) {
+          let temp = i *2 -1
+          console.log(temp)
+
+          for (let j = 1; j <= i; j++) {
+            document.writeln('&nbsp;&nbsp')
+          }
+          for (let k = temp; k <= 9; k++) {
+            document.writeln("*")
+          }
+          document.writeln('<br>')
+        }
+      }
+
+      let ex = prompt(
+        'Enter the case ? \n 1.angleshape \n 2.revangleshape \n 3.pyramidshape \n 4.revpyramidshape'
+      )
+      switch (ex) {
+        case '1':
+          anglepattern()
+          break
+        case '2':
+          revangleshape()
+          break
+        case '3':
+          pyramidshape()
+          break
+        case '4':
+          revpyramidshape()
+          break
+        default:
+          document.writeln('Invalid case')
+          break
+      }
+
+      // function pyramidshape() {
+      //   for (let i = 5; i >= 1; i--) {
+      //     let temp = i * 2 - 1
+      //     console.log(temp)
+      //     for (let j = 1; j <= i; j++) {
+      //       document.writeln('&nbsp;&nbsp')
+      //     }
+      //     for (let k = temp; k <= 9; k++) {
+      //       document.writeln('* ')
+      //     }
+      //     document.writeln('<br>')
+      //   }
+      // }
+      // function revpyramidshape() {
+      //   for (let i = 1; i <= 5; i++) {
+      //     let temp = i * 2 - 1
+      //     for (let j = 1; j <= temp; j++) {
+      //       document.writeln('&nbsp;&nbsp')
+      //     }
+      //     for (let k = temp; k >= 3; k--) {
+      //       document.writeln('* ')
+      //       let temp1 = i*2-1
+      //       for (let k = temp1; k >= 10; k--) {
+      //       document.writeln('* ')
+      //     }
+      //     document.writeln('<br>')
+      //     }
+      //     document.writeln('<br>')
+      //   }
+      // }
+      // revpyramidshape()
+    </script>
+  </body>
+</html>
