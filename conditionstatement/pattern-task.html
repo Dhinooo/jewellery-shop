@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pattern-Task</title>
+  </head>
+  <body>
+    <script>
+      // for (let i = 1; i <= 5; i++) {
+      //   for (let j = 1; j <= 5; j++) {
+      //     document.writeln(i)
+      //   }
+      //   document.writeln('<br>')
+      // }
+
+      // let k = 3
+      // for (let i = 1; i <= 5; i++) {
+      //   document.writeln(i * k)
+      // }
+
+      // for (let i = 1; i <= 5; i++) {
+      //   temp = i*2-1
+      //   for (let j = 1; j <= temp; j++) {
+      //     document.writeln(i)
+      //   }
+      //   document.writeln('<br>')
+      // }
+
+      // for (let i = 1; i <= 5; i++) {
+      //   let c = i % 2
+      //   for (let j = 1; j <= i; j++) {
+      //     document.writeln(i)
+      //   }
+      //   document.writeln('<br>')
+      // }
+      // ========================================================================/?
+      // for (let i = 1; i <= 5; i++) {
+      //   let c = i % 2 ? 1 : 0
+      //   for(let j=1; j<=5; j++){
+      //     document.writeln(c)
+      //   }
+      //   document.writeln('<br>')
+      // }
+
+      // ====================================================================================/
+      for (let i = 1; i <= 5; i++) {
+        let c = i % 2 ? 1 : 0
+        for (let j = 1; j <= i; j++) {
+          document.writeln(c)
+        }
+        document.writeln('<br>')
+      }
+      // =============================================================================/
+      for (let i = 1; i <= 5; i++) {
+        let c = i % 2 === 0 ? 1 : 0
+        for (let j = 1; j <= i; j++) {
+          document.writeln(c)
+        }
+        document.writeln('<br>')
+      }
+      // ===========================================================================================/
+      for (let i = 5; i >= 1; i--) {
+        let temp = i * 2 - 1
+        console.log(temp)
+        for (let j = 1; j <= i; j++) {
+          document.writeln('&nbsp;&nbsp;')
+        }
+        for (let k = temp; k <= 9; k++) {
+          document.writeln('* ')
+        }
+        document.writeln('<br>')
+      }
+      // ===============================================================================================/
+      // for (let i = 1; i <= 5; i++) {
+      //   let c = i % 2 ? 1 : 0
+      //   for (let j = 1; j <= 5; j++) {
+      //     document.writeln(c)
+      //   }
+      //   document.writeln('<br>')
+      // }
+      // ===============================================================================================/
+
+      // for (let i = 1; i <= 5; i++) {
+      //   let temp = i * 1 - 1
+      //   console.log(temp)
+      //   for (let j = 1; j <= i; j++) {
+      //     document.writeln(temp)
+      //   }
+      //   document.writeln('<br>')
+      // }
+      // ==============================================================================================/
+      for (let i = 5; i >= 1; i--) {
+        let temp = i
+        for (let j = 1; j <= i; j++) {
+          document.writeln('&nbsp;&nbsp')
+        }
+        for (let k = 5; k >= temp; k--) {
+          document.writeln("* ")
+        }
+        document.writeln('<br>')
+      }
+    </script>
+  </body>
+</html>

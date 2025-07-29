@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank-task</title>
+  </head>
+  <body>
+    <script>
+      let exit = true
+
+      let name, age, ph_no, initial_amount
+
+      while (exit) {
+        let ex = prompt(
+          'Enter Your Details? \n 1.Account Open \n 2.Show-Balance \n 3.Withdraw\n 4.Deposite\n 5.Exit'
+        )
+        switch (ex) {
+          case '1':
+            name = prompt('Enter Your Name?')
+            age = prompt('Enter Your Age?')
+            ph_no = prompt('Enter Your ph_no?')
+            amount = prompt('Enter Your amount?')
+            amount = parseFloat(amount)
+            console.log('Your Account Activated Successfully ')
+            break
+          case '2':
+            console.log('Your Name:', name)
+            console.log('Your Age:', age)
+            console.log('Your Phone_No:', ph_no)
+            console.log('Your Amount:', amount)
+            break
+          case '3':
+            console.log('Hii:', name)
+            console.log('Your Total Amount:', amount)
+            w_amount = prompt('Enter Your Amount ?')
+            console.log('Your Withdraw Amount is', w_amount)
+            t_amount = amount - w_amount
+            console.log('Your Acc Balance is', t_amount)
+            break
+
+          case '4':
+            console.log('Your Acc Balance ', t_amount)
+            d_amount = Number(prompt('Deposite amount ?'))
+            console.log("Your Deposited Amount is ",d_amount)
+            console.log('Total Amount is ', t_amount + d_amount)
+            break
+
+          case '5':
+            alert("Thank You!")
+            exit = false
+            break
+          default:
+            console.log('Invalid option')
+            break
+        }
+      }
+    </script>
+  </body>
+</html>
