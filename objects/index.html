@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>obejects</title>
+  </head>
+  <body>
+    <script>
+      let laptop = {
+        Name: 'msi9100',
+        color: 'blackred',
+        weight: '2.40kg',
+        rom: '4gp',
+        proccessor: '4th-gen',
+        graphics: 'RTX-40series',
+        series: 'Gaming',
+        prize: 60000,
+        lapcover: 2000,
+        webcamera: 'fullhd-type',
+
+        lapprize: function () {
+          return this.prize + this.lapcover
+        },
+        modelName: function () {
+          return this.Name + this.series
+        },
+        discount: function () {
+          //   return 'discount-Prize = ' + (10000 / 60000) * 100 + ' %'
+          return (
+            'Laptop-Prize = ' +
+            this.prize + '. '+
+            'discount = ' +
+            (10000 / 60000) * 100 +'%'
+          )
+        }
+      }
+      //add
+      laptop.chipset = 'intelhtm870'
+
+      //modify
+      laptop.rom = '3.4kg'
+
+      //delete
+      delete laptop.color
+
+      console.log(laptop)
+      console.log(laptop.lapprize())
+      console.log(laptop.modelName())
+      console.log(laptop.discount())
+    </script>
+  </body>
+</html>
