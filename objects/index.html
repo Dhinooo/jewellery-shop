@@ -3,51 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>obejects</title>
+    <title>objects</title>
   </head>
   <body>
     <script>
-      let laptop = {
-        Name: 'msi9100',
-        color: 'blackred',
-        weight: '2.40kg',
-        rom: '4gp',
-        proccessor: '4th-gen',
-        graphics: 'RTX-40series',
-        series: 'Gaming',
-        prize: 60000,
-        lapcover: 2000,
-        webcamera: 'fullhd-type',
+      // let laptop = {
+      //   Name: 'msi9100',
+      //   color: 'blackred',
+      //   weight: '2.40kg',
+      //   rom: '4gp',
+      //   proccessor: '4th-gen',
+      //   graphics: 'RTX-40series',
+      //   series: 'Gaming',
+      //   prize: 90000,
+      //   lapcover: 2000,
+      //   webcamera: 'fullhd-type',
+      //   // originalprize: 50000,
+      //   disper: 30,
+      //   lapprize: function () {
+      //     return this.prize + this.lapcover
+      //   },
+      //   modelName: function () {
+      //     return this.Name + this.series
+      //   },
+      //   damount: function () {
+      //     let daa = (this.prize * this.disper) / 100
+      //     let f = this.prize - daa
+      //     return f
+      //     //   return (this.prize-this.disamount)
+      //   }
+      // }
+      // //add
+      //   laptop.chipset = 'intelhtm870'
 
-        lapprize: function () {
-          return this.prize + this.lapcover
-        },
-        modelName: function () {
-          return this.Name + this.series
-        },
-        discount: function () {
-          //   return 'discount-Prize = ' + (10000 / 60000) * 100 + ' %'
-          return (
-            'Laptop-Prize = ' +
-            this.prize + '. '+
-            'discount = ' +
-            (10000 / 60000) * 100 +'%'
-          )
+      // //modify
+      //   laptop.rom = '3.4kg'
+
+      // //delete
+      //   delete laptop.color
+
+      // console.log(laptop)
+      // console.log(laptop.lapprize())
+      // console.log(laptop.modelName())
+      // console.log(laptop.damount())
+      // // console.log(laptop)
+
+      // let helmet = {
+      //   name: 'Steelbird',
+      //   brand: 'studds',
+      //   waranty: '2years',
+      //   verity: '1000s',
+      //   Quality: 'premium',
+      //   specilites: 'Wind Sheild , Air Ventilater, Adjustable-class',
+      //   color: 'red-blue-yellow-green-meroon-violet-white',
+      //   edition: 'special',
+      //   creation: '1947',
+      //   rate: 2000,
+      //   discount: 31,
+
+      //   fname: function () {
+      //     return this.name + this.creation
+      //   },
+
+      //   discamount: function () {
+      //     let amt = (this.rate * this.discount) / 100
+      //     let famt = this.rate - amt
+      //     return famt
+      //   }
+      // }
+
+      // helmet.location = 'All-over-tn'
+
+      // helmet.name = 'Ags'
+
+      // // delete helmet.creation
+
+      // console.log(helmet)
+
+      // console.log(helmet.fname())
+      // console.log(helmet.discamount())
+
+      for (let i = 5; i >= 1; i--) {
+        // row
+
+        for (let j = 5; j >= 6 - i; j--) {
+          document.writeln(j)
         }
+        document.writeln(i)
+        for (let k = i; k <= 5; k++) {
+          document.writeln(i)
+        }
+
+        for (let j = 5; j >= i; j--) {
+          //column
+          // debugger;
+          let s = j % 2 ? 1 : 0
+          document.writeln(i)
+        }
+        document.writeln('<br>')
       }
-      //add
-      laptop.chipset = 'intelhtm870'
-
-      //modify
-      laptop.rom = '3.4kg'
-
-      //delete
-      delete laptop.color
-
-      console.log(laptop)
-      console.log(laptop.lapprize())
-      console.log(laptop.modelName())
-      console.log(laptop.discount())
     </script>
   </body>
 </html>

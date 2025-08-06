@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array-of-objects</title>
+  </head>
+  <body>
+    <!-- 
+    laptop
+        --------------
+        1.Lenovo
+        2.hp
+        3.acer
+        4.dell
+        productname,price,processor,storage,color
+        objects-sysntax
+        let a = {
+            key : value,
+            key : value
+        }
+            [{},{},{},{}]
+
+
+        localstorage
+        syntax
+        2 parameters
+        localstorage.setItem("key","value")
+        -->
+    <script>
+        let lapdetail = prompt('How Many Laptop details ?')
+        let products = []
+        for (i = 1; i <= lapdetail; i++) {
+          let productname = prompt(i + ')Enter Your Product name?')
+          let price = prompt(i + ')Enter your price?')
+          let processor = prompt(i + ')Enter Processor?')
+          let storage = prompt(i + ')Enter storage?')
+          let color = prompt(i + ')Enter a color?')
+
+          let laptop = {
+            productname: productname,
+            price: price,
+            processor: processor,
+            storage: storage,
+            color: color
+          }
+
+          console.log(laptop)
+          products.push(laptop)
+        }
+
+      // let name = 'Dhina'
+
+      // localStorage.setItem("num",[1,2,35,43,562])
+
+      // localStorage.setItem('num',name)
+
+    //   let products = [
+    //     { pname: 'lenovo', price: '30000' },
+    //     { pname: 'hp', price: '20000' }
+    //   ]
+      console.log(products)
+      //   setItem in localStorage
+      localStorage.setItem('products', JSON.stringify(products))
+      // get item - localStorage
+      let g = localStorage.getItem('products')
+      // console.log(g);
+      let prods = JSON.parse(g)
+      console.log(prods)
+
+      prods.forEach((el)=>{
+        // console.log(el);
+        // console.log(el.pname);
+        document.writeln("<p>"+el.productname+" => "+el.price+"</p>")
+        
+      })
+    </script>
+  </body>
+</html>
