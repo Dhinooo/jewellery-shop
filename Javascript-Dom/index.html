@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <p id="one">hello</p> -->
+
+    <!-- <h1 id="title">Hello World!</h1> -->
+
+    <!-- <button onclick="change()">Change</button> -->
+
+    <input type="" id="num1" /><br />
+    <input type="" id="num2" /><br>
+ 
+    <button onclick="add()">Add</button>
+    <p id="result">Result</p>
+
+    <script>
+      // Select paragraph tag using id
+      //   console.log(document.getElementById('one'))
+
+      //   var para = document.getElementById('one')
+      //   console.log(para.textContent)
+      //   var para1 = para.textContent = 'Bye'
+      //     console.log(para1);
+      var para = document.getElementById('title')
+
+      console.log(para.textContent)
+
+      // var para1 = para.textContent='bye World!'
+
+      function change() {
+        para.textContent = 'bye World!'
+      }
+
+      //   ---------------------------------------
+      function add(num1, num2) {
+        num1 + num2
+      }
+    </script>
+  </body>
+</html>
