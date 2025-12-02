@@ -146,8 +146,8 @@
 }
 .title-container {
   margin: 0 10px;
-   background-color: rgba(0, 0, 0, 0.204);
-   border-radius: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.204);
+  border-radius: 10px 10px;
 }
 .title-container .title-item {
   border-radius: 10px 10px;
@@ -196,43 +196,43 @@
   /* padding: 10px 10px; */
   border-radius: 10px 10px;
 }
+/* Small Images Grid */
 .prdt-img-container .prdt-small-img-item {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  justify-content: space-evenly;
-  /* margin: 0 auto; */
+  gap: 10px; /* spacing between items */
   width: 80%;
-  margin: 0 auto;
+  margin: 5px auto;
 }
+
 .prdt-img-container .prdt-small-img-item img {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 70%;
   padding: 15px 10px;
   object-fit: cover;
-  border-radius: 10px 30px;
-
-  /* background-color: #00faff; */
-  /* margin: 0 auto; */
-  /* border: 1px solid black; */
+  border-radius: 10px 20px;
+  /* border:2px  solid ; */
 }
 
+/* Main Big Image */
 .prdt-img {
-  height: 70%;
-  object-fit: cover;
-  text-align: center;
-  /* backdrop-filter: blur(2px);
-  background: rgba(0, 0, 0, 0.2);
-  /* opacity: 0; */
-  /* transition: opacity 0.5s ease;
-  overflow: hidden; */
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px 10px;
+  /* border: 2px solid; */
+  background-color: #33333309;
+  perspective: 1000px; /* keeps scale effect clean */
 }
+
 .prdt-img img {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
+  object-fit: cover;
+  border-radius: 10px 30px;
   transition: transform 0.6s ease;
-  perspective: 1000;
 }
+
 .prdt-img:hover img {
   transform: scale(1.15);
 }
@@ -492,8 +492,8 @@
 .wrapper {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
-  gap: 15px;
+  margin-top: 50px;
+  gap: 30px;
 }
 
 /* EACH ICON */
@@ -512,7 +512,7 @@
   justify-content: center;
   background: #fff;
   border-radius: 50%;
-  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
   transition: 0.3s ease;
 }
 
@@ -540,7 +540,7 @@
 
 /* TOOLTIP ARROW */
 .wrapper .icon .tooltip:before {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -5px;
   left: 50%;
@@ -557,21 +557,45 @@
 }
 
 /* SOCIAL COLOR EFFECTS */
-.icon.facebook:hover span { background: #1877F2; }
-.icon.facebook:hover span i { color: #fff; }
-.icon.facebook:hover .tooltip { background: #1877F2; }
+.icon.facebook:hover span {
+  background: #1877f2;
+}
+.icon.facebook:hover span i {
+  color: #fff;
+}
+.icon.facebook:hover .tooltip {
+  background: #1877f2;
+}
 
-.icon.youtube:hover span { background: #ff0000; }
-.icon.youtube:hover span i { color: #fff; }
-.icon.youtube:hover .tooltip { background: #ff0000; }
+.icon.youtube:hover span {
+  background: #ff0000;
+}
+.icon.youtube:hover span i {
+  color: #fff;
+}
+.icon.youtube:hover .tooltip {
+  background: #ff0000;
+}
 
-.icon.twitter:hover span { background: #1DA1F2; }
-.icon.twitter:hover span i { color: #fff; }
-.icon.twitter:hover .tooltip { background: #1DA1F2; }
+.icon.twitter:hover span {
+  background: #1da1f2;
+}
+.icon.twitter:hover span i {
+  color: #fff;
+}
+.icon.twitter:hover .tooltip {
+  background: #1da1f2;
+}
 
-.icon.instagram:hover span { background: #E4405F; }
-.icon.instagram:hover span i { color: #fff; }
-.icon.instagram:hover .tooltip { background: #E4405F; }
+.icon.instagram:hover span {
+  background: #e4405f;
+}
+.icon.instagram:hover span i {
+  color: #fff;
+}
+.icon.instagram:hover .tooltip {
+  background: #e4405f;
+}
 
 /* FOOTER BOTTOM */
 .develop-container {
@@ -583,7 +607,6 @@
   margin: 0;
   font-size: 14px;
 }
-
 
 /* footer-end */
 /* ------------------------------------------------------------------------------------------------------------------------- */
@@ -666,7 +689,7 @@
 
 .fine-banner-item img {
   width: 100%;
-  height: 100% ;
+  height: 100%;
   object-fit: cover;
   padding: 10px;
   border-radius: 20px;
@@ -692,7 +715,7 @@
   height: 250px;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.20);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
   transition: all 0.4s ease;
 }
 
@@ -847,7 +870,7 @@
     position: absolute;
     top: 70px;
     right: -220px;
-    background: #111;
+    background: #02020b;
     width: 200px;
     display: block;
     padding: 20px;
@@ -1056,7 +1079,6 @@
     font-size: 16px;
   }
 }
-
 
 /* ----------------contact-page-end--------------------------------------------------------------------------------- */
 /* Navigation Bar End */
@@ -1366,7 +1388,6 @@
     margin: 5px;
   }
 }
-
 
 @keyframes slider {
   0% {
