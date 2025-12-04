@@ -38,7 +38,17 @@ let person1 = {
   pSalary: 1000,
   introYourself: function (a,b) {
     console.log(this.pFName + ' ' + this.pLName +(a+b)  )
+    return(a+b)
   }
 }
+//call
 person1.introYourself.call(person, 10, 20)
-person1.introYourself(10,20)
+// person1.introYourself(10,20)
+
+//apply
+person1.introYourself.apply(person, [200,300])
+
+//bind
+let ansBind = person1.introYourself.bind(person, 2,4)
+console.log(ansBind());
+
