@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home-page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER NAVBAR -->
+    <header>
+      <div class="navbar">
+        <!-- Logo -->
+        <div class="nav-logo">
+          <h3>RAMU-JEWELLERY</h3>
+        </div>
+
+        <!-- Search Box -->
+        <div class="nav-search">
+          <input type="text" placeholder="Search" />
+          <i class="fa fa-search"></i>
+        </div>
+
+        <!-- Icons -->
+        <div class="icons">
+          <i class="fa fa-user-o" aria-hidden="true"></i>
+
+          <i class="fa fa-heart-o" aria-hidden="true">
+            <span class="badge">0</span>
+          </i>
+
+          <i class="fa fa-shopping-bag" aria-hidden="true">
+            <span class="badge">0</span>
+          </i>
+        </div>
+      </div>
+      <!-- MAIN MENU -->
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#">NEW IN</a></li>
+          <li><a href="#">NECKLACES</a></li>
+          <li><a href="#">EARRINGS</a></li>
+          <li><a href="#">BRACELETS</a></li>
+          <li><a href="#">RINGS</a></li>
+          <li><a href="#">COLLECTIONS</a></li>
+          <li><a href="#">GIFTING</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- BANNER IMAGE -->
+    <div class="carousel-container">
+      <div class="carousel-slide fade">
+        <img src="images/slide-img1.png" alt="" />
+      </div>
+
+      <div class="carousel-slide fade">
+        <img src="images/slide-img2.png" alt="" />
+      </div>
+
+      <div class="carousel-slide fade">
+        <img src="images/slide-img3.png" alt="" />
+      </div>
+
+      <!-- Navigation arrows -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Dots -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
