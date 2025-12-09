@@ -58,30 +58,30 @@
       </nav>
     </header>
     <!-- BANNER IMAGE -->
-    <div class="carousel-container">
-      <div class="carousel-slide fade">
-        <img src="images/slide-img1.png" alt="" />
-      </div>
-
-      <div class="carousel-slide fade">
-        <img src="images/slide-img2.png" alt="" />
-      </div>
-
-      <div class="carousel-slide fade">
-        <img src="images/slide-img3.png" alt="" />
-      </div>
-
-      <!-- Navigation arrows -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-      <!-- Dots -->
-      <div class="dots">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-      </div>
+    <!-- Slides -->
+    <div class="carousel-slide fade">
+      <img src="images/slide-img1.png" alt="" />
     </div>
+
+    <div class="carousel-slide fade">
+      <img src="images/slide-img2.png" alt="" />
+    </div>
+
+    <div class="carousel-slide fade">
+      <img src="images/slide-img3.png" alt="" />
+    </div>
+
+    <!-- Arrows -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Dots BELOW the banner -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
     <!-- ----------------------------------------------------------------- -->
     <section class="category-section">
       <h2>EVERYDAY DEMIFINE JEWELLERY</h2>
@@ -127,66 +127,55 @@
 
     <!-- --------------------------------------------?---------------- -->
     <section class="top-styles">
-      <h2>TOP STYLES</h2>
+      <h2>PALMONAS TOP STYLES</h2>
 
-      <!-- Category Buttons -->
-      <div class="filters">
-        <button class="active">ALL</button>
-        <button>NECKLACES</button>
-        <button>BRACELETS</button>
-        <button>EARRINGS</button>
-        <button>RINGS</button>
-        <button>MENS</button>
-        <button>MANGALSUTRA</button>
+      <!-- CATEGORY TABS -->
+      <div class="tabs">
+        <button class="tab active">ALL</button>
+        <button class="tab">NECKLACES</button>
+        <button class="tab">BRACELETS</button>
+        <button class="tab">EARRINGS</button>
+        <button class="tab">RINGS</button>
+        <button class="tab">MENS</button>
+        <button class="tab">MANGALSUTRA</button>
       </div>
 
-      <!-- Product Grid -->
-      <div class="product-grid">
+      <!-- PRODUCT GRID -->
+      <div class="products">
         <!-- Product 1 -->
         <div class="product-card">
-          <span class="offer-tag">BUY 1 GET 1</span>
-          <img src="images/product1.jpg.jpg" alt="Jewellery 1" />
-
-          <div class="bottom-info">
-            <span class="heart">♡</span>
-            <button class="add-btn">Like</button>
-          </div>
+          <span class="offer">BUY 1 GET 1</span>
+          <img src="images/product1.jpg.jpg" alt="" />
+          <button class="heart"><i class="fa fa-heart-o"></i></button>
+          <button class="add-btn">ADD TO BAG</button>
         </div>
 
         <!-- Product 2 -->
         <div class="product-card">
-          <span class="offer-tag">BUY 1 GET 1</span>
-          <img src="images/product2.jpg.jpg" alt="Jewellery 2" />
-
-          <div class="bottom-info">
-            <span class="heart">♡</span>
-            <button class="add-btn">Like</button>
-          </div>
+          <span class="offer">BUY 1 GET 1</span>
+          <img src="images/product2.jpg.jpg" alt="" />
+          <button class="heart"><i class="fa fa-heart-o"></i></button>
+          <button class="add-btn">ADD TO BAG</button>
         </div>
 
         <!-- Product 3 -->
         <div class="product-card">
-          <span class="offer-tag">BUY 1 GET 1</span>
-          <img src="images/product3.jpg.jpg" alt="Jewellery 3" />
-
-          <div class="bottom-info">
-            <span class="heart">♡</span>
-            <button class="add-btn">Like</button>
-          </div>
+          <span class="offer">BUY 1 GET 1</span>
+          <img src="images/product3.jpg.jpg" alt="" />
+          <button class="heart"><i class="fa fa-heart-o"></i></button>
+          <button class="add-btn">ADD TO BAG</button>
         </div>
 
         <!-- Product 4 -->
         <div class="product-card">
-          <span class="offer-tag">BUY 1 GET 1</span>
-          <img src="images/product4.jpg.jpg" alt="Jewellery 4" />
-
-          <div class="bottom-info">
-            <span class="heart">♡</span>
-            <button class="add-btn">Like</button>
-          </div>
+          <span class="offer">BUY 1 GET 1</span>
+          <img src="images/product4.jpg.jpg" alt="" />
+          <button class="heart"><i class="fa fa-heart-o"></i></button>
+          <button class="add-btn">ADD TO BAG</button>
         </div>
       </div>
     </section>
+
     <!-- --------------------./------------------------------------ -->
     <section class="confidence-section">
       <h2>SHOP WITH CONFIDENCE</h2>
@@ -227,74 +216,256 @@
             Our lab-grown diamonds are SGL Certified, ensuring the highest
             standards of quality and authenticity same like natural diamonds.
             Each diamond undergoes rigorous testing to guarantee its brilliance
-            and ethical origins. Shine with confidence in every sparkly moment.
+            and ethical origins.
           </p>
         </div>
       </div>
     </section>
     <!-- ------------------------------------------------------------. -->
-    <section class="reviews-section">
-      <h2>Trusted by our community</h2>
+    <div class="testimonial-section">
+      <h2 class="title">Trusted by our community</h2>
 
-      <div class="reviews-container">
-        <button class="arrow arrow-left">&#10094;</button>
+      <!-- Carousel Container -->
+      <div class="carousel">
+        <button class="arrow left" onclick="slideLeft()">&#10094;</button>
 
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="reviewer-name">Joshna D.</div>
-          <div class="review-text">
-            This piece is just amazing, I want to purchase 1 more set but it was
-            out of stock 😲😲😲 I wish I could get more
+        <div class="track-container">
+          <div class="track">
+            <!-- CARD 1 -->
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <h3>Joshna D.</h3>
+              <p>
+                This piece is just amazing, I want to purchase 1 more set but it
+                was out of stock 😵‍💫😵‍💫 I wish I could get more
+              </p>
+              <div class="product">
+                <!-- <img src="img1.png" /> -->
+                <a href="#">Nail Bangle Bracelet</a>
+              </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <h3>Amila M.</h3>
+              <p>
+                They are soooo pretty. Real gold is expensive so I’m happy I
+                found this. Love and God bless you all.
+              </p>
+              <div class="product">
+                <!-- <img src="img2.png" /> -->
+                <a href="#">Golden Heart Love Hoops</a>
+              </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="card">
+              <div class="stars">★★★★★</div>
+              <h3>Yash K.</h3>
+              <p>
+                Amazing experience after purchasing this product. Great quality
+                and worth the price.
+              </p>
+              <div class="product">
+                <!-- <img src="img3.png" /> -->
+                <a href="#">Small Heart Hoop Earrings</a>
+              </div>
+            </div>
           </div>
-          <a class="product-link" href="#">
-            <!-- <img
-              src="https://via.placeholder.com/50"
-              alt="Nail Bangle Bracelet"
-            /> -->
-            Nail Bangle 
-          </a>
         </div>
 
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="reviewer-name">Amila M.</div>
-          <div class="review-text">
-            They are soooo pretty. I always wished to have such earrings in real
-            gold, but gold is sooo expensive now. So I am glad I stumbled into
-            Palmonas. Thank you and keep up the awesome work. Love and God bless
-            you all.
-          </div>
-          <a class="product-link" href="#">
-            <!-- <img
-              src="https://via.placeholder.com/50"
-              alt="Golden Heart Love Hoops"
-            /> -->
-            Golden Heart Love
-          </a>
-        </div>
-
-        <div class="review-card">
-          <div class="stars">★★★★★</div>
-          <div class="reviewer-name">Yash K.</div>
-          <div class="review-text">
-            My experience was amazing after purchasing this product. I was
-            eagerly waiting to buy this. Price and quality is amazing you can
-            buy it. It's give a tough competition to gold products.
-          </div>
-          <a class="product-link" href="#">
-            <!-- <img
-              src="https://via.placeholder.com/50"
-              alt="Small Heart Hoop Earrings"
-            /> -->
-            Small Heart Hoop Earrings
-          </a>
-        </div>
-
-        <!-- <button class="arrow arrow-right">&#10095;</button> -->
+        <button class="arrow right" onclick="slideRight()">&#10095;</button>
       </div>
 
-      <button class="view-all">VIEW ALL REVIEWS</button>
-    </section>
+      <div class="view-btn">
+        <button>VIEW ALL REVIEWS</button>
+      </div>
+    </div>
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+    <footer class="footer">
+      <!-- Subscribe Section -->
+      <div class="footer-subscribe">
+        <h3>Subscribe to receive exciting offers!</h3>
+
+        <div class="subscribe-box">
+          <input type="email" placeholder=" " />
+          <button><i class="fa fa-envelope"></i></button>
+        </div>
+
+        <div class="company-info">
+          <h4>DEMIFINE FASHION PVT LTD</h4>
+          <p>
+            📍160, Big Bazaar St, Singarathope, Devathanam, Tiruchirappalli -
+            620 008, Tamil Nadu, India.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer Links -->
+      <div class="footer-links">
+        <div class="col">
+          <h4>Policy</h4>
+          <ul>
+            <li><a href="#">Shipping & Delivery Policy</a></li>
+            <li><a href="#">Return & Exchange Policy</a></li>
+            <li><a href="#">Lifetime Warranty Policy</a></li>
+            <li><a href="#">Lifetime BuyBack Policy</a></li>
+            <li><a href="#">Payment Policy</a></li>
+            <li><a href="#">Grievance Redressal Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Return & Exchange</a></li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Stores & Services</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- ---------------------------------------------------------------------------------------. -->
+    <!-- SOCIAL ICONS -->
+    <div class="social-icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-youtube-play"></i></a>
+    </div>
+
+    <!-- APP DOWNLOAD BOX -->
+    <div class="app-box">
+      <h3>Location</h3>
+      <p>( Scan | ⭐ 4.9 )</p>
+
+      <div class="app-buttons">
+        <img src="images/ramandco-location.webp" class="store-btn" />
+        <!-- <img src="images/App-Store.jpg" class="store-btn" /> -->
+      </div>
+
+      <p class="small">Please Contact</p>
+    </div> 
+
+    <!-- PAYMENT ICONS & COPYRIGHT -->
+    <div class="footer-payments">
+      <p>All Rights Reserved © Ramu & Jewellery</p>
+
+      <div class="payment-icons">
+        <img src="images/google_pay-.svg" />
+        <img src="images/master-card.jpg" />
+        <img src="images/paypal.png" />
+        <img src="images/visa.png" />
+      </div>
+
+      <span class="returns">Annual Returns 2025-26</span>
+    </div>
+
+    <!-- POPULAR SEARCHES -->
+    <div class="popular-searches">
+      <h2>Popular Searches</h2>
+
+      <div class="category">
+        <h4>For Women</h4>
+        <p>
+          Demi-Fine Jewellery | Rings For Women | Earrings For Women | Bracelet
+          For Women | Pendants For Women | Necklaces For Women
+        </p>
+      </div>
+
+      <div class="category">
+        <h4>For Men</h4>
+        <p>Rings For Men | Pendant For Men | Chain For Men</p>
+      </div>
+
+      <div class="category">
+        <h4>Mangalsutra</h4>
+        <p>Gold Mangalsutra | Diamond Mangalsutra | Infinity Mangalsutra</p>
+      </div>
+      <div class="category">
+        <h4>For Women</h4>
+        <p>
+          Demi-Fine Jewellery | Rings For Women | Earrings For Women | Bracelet
+          For Women | Pendants For Women | Necklaces For Women
+        </p>
+      </div>
+
+      <div class="category">
+        <h4>For Men</h4>
+        <p>Rings For Men | Pendant For Men | Chain For Men</p>
+      </div>
+
+      <div class="category">
+        <h4>Mangalsutra</h4>
+        <p>Gold Mangalsutra | Diamond Mangalsutra | Infinity Mangalsutra</p>
+      </div>
+      <div class="category">
+        <h4>For Women</h4>
+        <p>
+          Demi-Fine Jewellery | Rings For Women | Earrings For Women | Bracelet
+          For Women | Pendants For Women | Necklaces For Women
+        </p>
+      </div>
+
+      <div class="category">
+        <h4>For Men</h4>
+        <p>Rings For Men | Pendant For Men | Chain For Men</p>
+      </div>
+
+      <div class="category">
+        <h4>Mangalsutra</h4>
+        <p>Gold Mangalsutra | Diamond Mangalsutra | Infinity Mangalsutra</p>
+      </div>
+      <div class="category">
+        <h4>For Women</h4>
+        <p>
+          Demi-Fine Jewellery | Rings For Women | Earrings For Women | Bracelet
+          For Women | Pendants For Women | Necklaces For Women
+        </p>
+      </div>
+
+      <div class="category">
+        <h4>For Men</h4>
+        <p>Rings For Men | Pendant For Men | Chain For Men</p>
+      </div>
+
+      <div class="category">
+        <h4>Mangalsutra</h4>
+        <p>Gold Mangalsutra | Diamond Mangalsutra | Infinity Mangalsutra</p>
+      </div>
+      <div class="category">
+        <h4>For Women</h4>
+        <p>
+          Demi-Fine Jewellery | Rings For Women | Earrings For Women | Bracelet
+          For Women | Pendants For Women | Necklaces For Women
+        </p>
+      </div>
+
+      <div class="category">
+        <h4>For Men</h4>
+        <p>Rings For Men | Pendant For Men | Chain For Men</p>
+      </div>
+
+      <div class="category">
+        <h4>Mangalsutra</h4>
+        <p>Gold Mangalsutra | Diamond Mangalsutra | Infinity Mangalsutra</p>
+      </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------. -->
 
     <script src="script.js"></script>
   </body>
