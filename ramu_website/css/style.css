@@ -129,6 +129,7 @@ header {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
 /* Fade animation */
@@ -150,7 +151,7 @@ header {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  top: 70%;
   padding: 12px;
   color: white;
   font-weight: bold;
@@ -245,6 +246,8 @@ header {
   .next {
     font-size: 18px;
     padding: 8px;
+    position: absolute;
+    top: 30%;
   }
 
   .dots {
@@ -430,7 +433,7 @@ header {
 /* MAIN SECTION */
 .top-styles {
   width: 85%;
-  margin: 50px auto;
+  margin: 10px auto;
   text-align: center;
 }
 
@@ -551,7 +554,6 @@ header {
 }
 /* ___________________________________________________________________________________ */
 
-
 /* ------------------------------ */
 /* ⭐ RESPONSIVE BREAKPOINTS ⭐   */
 /* ------------------------------ */
@@ -653,12 +655,62 @@ header {
   }
 }
 /* ------------------------------------------------------------------------------------ */
+/* Main section */
+.confidence-section {
+  width: 100%;
+  padding: 40px 20px;
+  background: #f5f5f5;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
 
-/* ----------------------------- */
-/* ⭐ RESPONSIVENESS ADDED ⭐ */
-/* ----------------------------- */
+/* Title */
+.confidence-title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
 
-/* Tablets (2 cards per row) */
+/* Card container */
+.confidence-cards {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Each Card */
+.card1 {
+  width: 320px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Icon Style */
+.card1 .icon {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+/* Headings */
+.card1 h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.card1 p {
+  font-size: 15px;
+  color: #555;
+}
+
+/* ✨ RESPONSIVE BREAKPOINTS */
+
+/* Tablets */
 @media (max-width: 992px) {
   .confidence-cards {
     gap: 25px;
@@ -669,32 +721,29 @@ header {
   }
 }
 
-/* Small Tablets / Large Phones (1 card centered but bigger) */
+/* Small Tablets / Mobile Horizontal */
 @media (max-width: 768px) {
   .card {
-    width: 80%;
-    max-width: 320px;
+    width: 100%;
+    max-width: 400px;
   }
 }
 
-/* Mobile (Single column with spacing) */
+/* Mobile Phones */
 @media (max-width: 480px) {
-  .confidence-section {
-    padding: 40px 15px;
+  .confidence-title {
+    font-size: 22px;
   }
 
   .card {
     width: 100%;
   }
 
-  .card h3 {
-    font-size: 16px;
-  }
-
-  .card p {
-    font-size: 13px;
+  .card .icon {
+    width: 50px;
   }
 }
+
 /* -------------------------------------------------------------------- */
 .review-section {
   text-align: center;
@@ -770,7 +819,6 @@ header {
 }
 /* --------------------------------------------------------------------------------------- */
 
-
 /* --------------------------- */
 /* ⭐ RESPONSIVE BREAKPOINTS ⭐ */
 /* --------------------------- */
@@ -826,169 +874,88 @@ header {
 }
 
 /* ------------------------------------------------------------------------------- */
-.testimonial-section {
+/* Section */
+.testimonials-section {
   width: 100%;
-  padding: 40px 0;
+  padding: 50px 20px;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
-.title {
-  font-size: 28px;
-  margin-bottom: 30px;
-  color: #1e3b3b;
+/* Title */
+.testimonials-title {
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-family: 'Georgia', serif;
   font-style: italic;
+  color: #0d434c;
 }
 
-.carousel {
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.track-container {
-  overflow: hidden;
-}
-
-.track {
+/* Container for 3 cards */
+.testimonials {
   display: flex;
-  transition: 0.5s ease;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap;
 }
 
-.card {
-  width: 350px;
-  background: #fff;
-  margin: 0 20px;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+/* Each card */
+.testimonial {
+  width: 320px;
+  line-height: 1.7;
 }
 
 .stars {
-  color: gold;
   font-size: 20px;
+  color: #333;
   margin-bottom: 10px;
 }
 
-.card p {
-  font-size: 15px;
-  color: #555;
-  height: 100px;
-}
-
-.product {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 15px;
-}
-
-.product img {
-  width: 60px;
-  margin-right: 10px;
-}
-
-.product a {
-  font-size: 15px;
-  color: #1e3b3b;
-  text-decoration: underline;
-}
-
-.arrow {
-  position: absolute;
-  top: 40%;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 12px 15px;
-  border-radius: 50%;
-  cursor: pointer;
+.testimonial h3 {
   font-size: 18px;
+  margin-bottom: 15px;
 }
 
-.left {
-  left: -50px;
-}
-
-.right {
-  right: -50px;
-}
-
-.view-btn button {
-  margin-top: 20px;
-  padding: 12px 28px;
-  border: 1px solid #000;
-  background: transparent;
-  cursor: pointer;
+/* Text */
+.testimonial p {
   font-size: 15px;
+  color: #444;
 }
-/* -------------------------------------------------------------------------------- */
 
-/* ----------------------------------- */
-/* ⭐ RESPONSIVE BREAKPOINTS ADDED ⭐ */
-/* ----------------------------------- */
+/* -------------------- */
+/* RESPONSIVE BREAKPOINTS */
+/* -------------------- */
 
-/* Tablets (768px–992px) */
-@media (max-width: 992px) {
-  .card {
-    width: 280px;
-    margin: 0 15px;
-  }
-
-  .arrow {
-    padding: 10px 12px;
-  }
-
-  .left {
-    left: -30px;
-  }
-
-  .right {
-    right: -30px;
+/* Tablets */
+@media (max-width: 1024px) {
+  .testimonials {
+    gap: 40px;
   }
 }
 
-/* Large Phones / Small Tablets */
+/* Tablets & Large Phones */
 @media (max-width: 768px) {
-  .card {
-    width: 240px;
-    padding: 20px;
-  }
-
-  .track {
-    gap: 10px;
-  }
-
-  .arrow {
-    display: none; /* Hide arrows on mobile */
+  .testimonial {
+    width: 90%;
+    max-width: 450px;
   }
 }
 
-/* Mobile */
+/* Mobile Phones */
 @media (max-width: 480px) {
-  .carousel {
-    padding: 0 10px;
+  .testimonials-title {
+    font-size: 26px;
   }
 
-  .card {
-    width: 85%;
-    margin: auto;
-    padding: 18px;
+  .stars {
+    font-size: 18px;
   }
 
-  .title {
-    font-size: 22px;
-  }
-
-  .product img {
-    width: 50px;
-  }
-
-  .product a {
+  .testimonial p {
     font-size: 14px;
   }
 }
+
 /* ----------------------------------------------------------------------------------------- */
 
 footer {
@@ -1090,7 +1057,6 @@ footer {
 
 /* Tablets */
 @media (max-width: 992px) {
-
   footer {
     padding: 40px 40px;
     flex-wrap: wrap;
@@ -1114,7 +1080,6 @@ footer {
 
 /* Mobile */
 @media (max-width: 768px) {
-
   footer {
     padding: 35px 25px;
     flex-direction: column;
@@ -1137,7 +1102,6 @@ footer {
 
 /* Small Mobile */
 @media (max-width: 480px) {
-
   .footer-subscribe h3 {
     font-size: 18px;
   }
@@ -1235,6 +1199,7 @@ footer {
 
 .category {
   margin-bottom: 25px;
+  border-bottom: #55555518 1px solid;
 }
 
 .category h4 {
@@ -1255,7 +1220,6 @@ footer {
 
 /* Tablets */
 @media (max-width: 768px) {
-  
   .social-icons a {
     width: 35px;
     height: 35px;
@@ -1277,7 +1241,6 @@ footer {
 
 /* Mobile Phones */
 @media (max-width: 480px) {
-
   .social-icons {
     gap: 15px;
   }
@@ -1313,3 +1276,259 @@ footer {
   }
 }
 /* -------------------------------------------------------------------------------------------------------- */
+/* --------------------Product-page---------------------------------------------- */
+
+.hero-banner .hero-image {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Image fully covers the area */
+  object-position: center; /* Image will stay centered */
+}
+
+/* ---------------cOLLECTION image---------------------------------------------- */
+/* Section */
+.best-seller-section {
+  width: 100%;
+  padding: 30px 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Title */
+.top-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.top-title h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.breadcrumb {
+  margin-top: 5px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* Filter + Sort Row */
+.filter-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.filter {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.sort select {
+  border: none;
+  font-size: 15px;
+  padding: 5px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* Product Grid */
+.product-grid {
+  width: 100%;
+  /* height: 350px; */
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Product Card */
+.product-card {
+  width: 90%;
+  height: 350px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* Offer Tag */
+.offer-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #e9dfd4;
+  padding: 5px 15px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+/* ------------ RESPONSIVE ------------ */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Small Tablets */
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-title h1 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .filter-sort {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .top-title h1 {
+    font-size: 24px;
+  }
+}
+/* -------------------------About-Page---------------------------------------- */
+.future-section {
+  width: 100%;
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.future-section h1 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.future-section p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #666;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Responsive Screens */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .future-section h1 {
+    font-size: 32px;
+  }
+  .future-section p {
+    font-size: 16px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .future-section h1 {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+  .future-section p {
+    font-size: 15px;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+}
+/* --------------------------------------------------------------------------- */
+/* MAIN SECTION */
+.collab-section {
+  width: 100%;
+  padding: 50px 5%;
+  box-sizing: border-box;
+}
+
+/* FLEX CONTAINER */
+.collab-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* LEFT IMAGE */
+.collab-image {
+  flex: 1;
+}
+
+.collab-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* RIGHT SIDE CONTENT */
+.collab-content {
+  flex: 1;
+}
+
+.collab-content h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.collab-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .collab-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .collab-content h2 {
+    font-size: 30px;
+  }
+
+  .collab-content p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collab-content h2 {
+    font-size: 26px;
+  }
+
+  .collab-content p {
+    font-size: 15px;
+  }
+}
