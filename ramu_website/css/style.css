@@ -1532,3 +1532,190 @@ footer {
     font-size: 15px;
   }
 }
+/* ---------------------------------------------------------------------------------------- */
+/* MAIN SECTION */
+.mission-section {
+  width: 100%;
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FLEX CONTAINER */
+.mission-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT TEXT */
+.mission-text {
+  flex: 1;
+  text-align: center;
+}
+
+.mission-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.mission-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* RIGHT IMAGE */
+.mission-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mission-image img {
+  width: 100%;
+  max-width: 550px;
+  border-radius: 8px;
+}
+
+/* =============================== */
+/*        RESPONSIVE DESIGN        */
+/* =============================== */
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .mission-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .mission-text h2 {
+    font-size: 32px;
+  }
+}
+
+/* MOBILE 480px */
+@media (max-width: 480px) {
+  .mission-text h2 {
+    font-size: 28px;
+  }
+
+  .mission-text p {
+    font-size: 14px;
+  }
+
+  .mission-image img {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE 320px */
+@media (max-width: 360px) {
+  .mission-text h2 {
+    font-size: 24px;
+  }
+
+  .mission-text p {
+    font-size: 13px;
+  }
+}
+/* ------------------------------------------------------------------------------------- */
+/* MAIN SECTION */
+.brandstore-section {
+  width: 100%;
+  padding: 60px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FLEX CONTAINER */
+.brandstore-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* LEFT IMAGE */
+.brandstore-image {
+  flex: 1;
+}
+
+.brandstore-image img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+/* RIGHT TEXT */
+.brandstore-text {
+  flex: 1;
+  text-align: center;
+}
+
+.brandstore-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.brandstore-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 15px;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =============================== */
+/*        RESPONSIVE DESIGN        */
+/* =============================== */
+
+/* TABLETS */
+@media (max-width: 992px) {
+  .brandstore-container {
+    flex-direction: column;
+  }
+
+  .brandstore-text h2 {
+    font-size: 32px;
+  }
+}
+
+/* MOBILE 480px */
+@media (max-width: 480px) {
+  .brandstore-text h2 {
+    font-size: 28px;
+  }
+
+  .brandstore-text p {
+    font-size: 14px;
+  }
+
+  .brandstore-image img {
+    max-width: 100%;
+  }
+}
+
+/* MOBILE 320px */
+@media (max-width: 360px) {
+  .brandstore-text h2 {
+    font-size: 24px;
+  }
+
+  .brandstore-text p {
+    font-size: 13px;
+  }
+}
