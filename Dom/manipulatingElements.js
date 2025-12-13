@@ -19,5 +19,5 @@ function manipulatingElement () {
 
 //   orderList.append('Text Node',newListElement)
 
-  orderList.appendChild('Text Node',newListElement)
+  // orderList.appendChild('Text Node',newListElement)
 }
